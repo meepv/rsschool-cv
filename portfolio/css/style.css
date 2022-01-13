@@ -1,0 +1,365 @@
+/* reset */
+*, *::after, *::before {
+    margin: 0;
+    border: 0;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;  
+    font-size: 20px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(189, 174, 130, 1);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+/*  */
+
+/* header */
+header {
+    font-family: 'Inter', sans-serif;  
+    font-size: 20px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.bg {
+    background: url('/img/bg.jpg');
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 910px;
+    z-index: -1;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1440px;  
+}
+
+.nav-active {
+    display: flex;
+    min-height: 90px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    margin-left: 20px;
+}
+
+.nav-active ul{
+    display: flex;
+    gap: 30px
+}
+
+/* interactive */
+.nav-active a {
+    color: white;
+    transition: 0.5s ease;
+}
+
+.nav-active a:hover {
+    color: rgba(189, 174, 130, 1);
+    padding: 2px 12px;
+    border-color: rgba(255,255,255,1);
+    font-size: 25px;
+}
+
+/* main */
+.main {
+    color: #FFFFFF;   
+}
+
+.hero {
+    margin-left: 80px;
+    min-height: 820px;
+}
+
+.hero-title {
+    margin-top: 250px;
+    font-family: Merriweather;
+    font-size: 60px;
+    line-height: 120px;
+}
+
+.hero-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    max-width: 470px;
+    margin-bottom: 25px;
+}
+
+.btn {
+	background-color: rgba(189, 174, 130, 1);
+	cursor:pointer;
+	font-size:20px;
+	padding:15px 76px;
+    transition: .3s;
+}
+
+.btn:hover {
+	color:white;
+}
+
+/* skills */
+#skills {
+    min-height: 482px;
+    margin-bottom: 100px;
+}
+
+.skills-title {
+    font-family: Merriweather;
+    font-size: 40px;
+    line-height: 80px;
+    display: flex;
+    justify-content: center;
+    color: #BDAE82;
+}
+
+.skills-title::before, .skills-title::after {
+    content: '';
+    width: 274px;
+    display: inline-block;
+    background:#BDAE82;
+    height: 2px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.skills-card-inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px 0 40px;
+}
+
+.skills-card h3 {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.skills-card p {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    max-width: 280px;
+}
+
+.skills-card img {
+    height: 50px;
+    margin-top: 60px;
+}
+
+/* portfolio */
+.portfolio-navigation {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.btn-portfolio {
+    background-color: transparent;
+    border: 2px solid #BDAE82;;
+    color: rgba(189, 174, 130, 1);
+    padding: 14px 80px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.btn-portfolio:hover {
+    background-color: #BDAE82;
+    color: black;
+}
+
+.portfolio-tabs {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.skills-title {
+    margin-bottom: 60px;
+}
+
+/* video */
+.video-player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.btn-player {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    cursor: pointer;
+    background-image: url(../img/Playbtn.svg);
+    background-color: transparent;
+    transition: .3s ease;
+}
+
+.btn-player:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+/* price section */
+.price-inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+}
+
+.price-card {
+    border: 3px solid #BDAE82;
+    min-height: 505px;
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-head {
+    font-family: Merriweather;
+    font-size: 28px;
+    line-height: 56px;
+    padding: 43px 0 20px 0;
+}
+
+.price-dollar {
+    font-family: Merriweather;
+    font-size: 24px;
+    line-height: 48px;
+    color: #BDAE82;
+    padding-bottom: 20px;
+}
+
+.price-desc {
+    font-family: Inter;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.last {
+    padding-bottom: 40px;
+}
+
+/* contacts */
+#contacts-container {
+    background-image: url(../img/bg-2.jpg);
+    min-height: 700px;
+    background-repeat: no-repeat;
+    padding-left: 970px;
+    padding-right: 20px;
+    background-position: center center;
+}
+
+.info-block-title {
+    font-family: Merriweather;
+    font-size: 40px;
+    line-height: 80px;
+}
+
+::placeholder {
+    font-family: inherit;
+    color: #bdae82;
+    font-size: 20px;
+    opacity: .7;
+  }
+
+.info-block input {
+    min-height: 50px;
+    min-width: 410px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: 2px solid #BDAE82;
+    padding-left: 20px;
+}
+
+.info-block textarea {
+    min-height: 100px;
+    resize: none;
+    min-width: 410px;
+    background: transparent;
+    border: 2px solid #BDAE82;
+    padding-left: 20px;
+    margin-bottom: 35px;
+}
+
+.btn-contacts {
+    color: black;
+}
+/* footer */
+.footer {
+    min-height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.footer-left span:not(:first-child) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left a {
+    color: white;
+}
+
+.footer-center a {
+    color: white;
+}
+
+.footer-right img:not(:last-child){
+    margin-right: 30px;
+}
+
+.footer-right {
+    cursor: pointer;
+}
